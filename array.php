@@ -29,6 +29,25 @@ $array_multid = [
     ],
 ];
 
+$juan = [
+        'nombre' => 'Juan',
+        'IP' => '200.20.20.13',
+    ];
+$luis = [
+        'nombre' => 'Luis',
+        'IP' => '200.20.20.13',
+    ];
+
+$jazmin = [
+        'nombre' => 'Jaz',
+        'IP' => '200.20.20.13',
+    ];
+
+$finalistas = [];
+$finalistas[] = $juan;
+$finalistas[] = $luis;
+$finalistas[] = $jazmin;
+
 
 var_dump($array2);
 var_dump($array_asoc);
@@ -110,3 +129,6 @@ var_dump(array_slice($letras, 1, 3, TRUE));
 var_dump(array_unique ( [ 10 , 30, 10, 10, 20, 20, 10 ] ) );
 
 var_dump(range(1,5));
+
+
+var_dump($finalistas);
