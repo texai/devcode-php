@@ -50,6 +50,10 @@ if(count($_SESSION['usuarios'])>=5){
 
 $_SESSION['usuarios'][] = md5(rand(1,1000));
 
+//var_dump($_SESSION);
+
+//var_dump($_SERVER);
 
 
-var_dump($_SESSION);
+var_dump(getenv('ejecucion'));
+
