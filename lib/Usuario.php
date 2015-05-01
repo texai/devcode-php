@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\Model;
+//namespace Admin\Model;
 
 class Usuario {
     
@@ -16,6 +16,10 @@ class Usuario {
 
     function setTipoDoc($tipoDoc) {
         $this->tipoDoc = $tipoDoc;
+    }
+    
+    public function __toString(){
+        return 'Este usuario usa '.$this->tipoDoc. PHP_EOL;
     }
 
 }
