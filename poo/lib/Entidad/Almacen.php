@@ -13,6 +13,12 @@ class Almacen{
     protected $carga;
     protected $esDisponible;
     
+    const CIUDAD_DEFAULT = 'Trujillo';
+
+    public function __construct() {
+        $this->setCiudad(self::CIUDAD_DEFAULT);
+    }
+    
     public function cerrarAlmacen(){
         $this->esDisponible = false;
     }
